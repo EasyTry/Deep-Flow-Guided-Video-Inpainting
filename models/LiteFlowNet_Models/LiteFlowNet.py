@@ -7,7 +7,7 @@ import PIL
 import PIL.Image
 import sys
 try:
-	from correlation import correlation # the custom cost volume layer
+	from .correlation import correlation # the custom cost volume layer
 except:
 	sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), 'correlation')); import correlation # you should consider upgrading python
 
